@@ -11,9 +11,16 @@ body{
     display: flex;
     flex-direction: column ;
     font-family: 'Roboto', sans-serif;
+    
     width: 100%;
     min-height: 100vh;
     padding: 50px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
@@ -51,6 +58,10 @@ body{
 }
 
 .innerModal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center ;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -60,14 +71,72 @@ body{
 .tasksContainer{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 /* TASK */
 .taskContainer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    padding: 20px;
+}
+
+.titleContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.badge{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.badge.completed{
+    background-color: #198754;
+}
+
+/* pending orange  */
+.badge.pending{
+    background-color: #ffc107;
+}
+
+
+/* Modal Form */
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+}
+
+.deleteTaskBtn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
